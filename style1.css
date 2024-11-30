@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color:rgb(39, 57, 117) ;
+    height: 60px;
+    padding: 10px 20px;
+
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    background-color: rgb(238, 238, 238);
+}
+/*ნავიგაცია*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+list-style: none;
+display: flex;
+}
+.menu li{
+    margin-right: 20px;
+    padding: 8px;
+}
+.menu li a{
+    color:rgb(190, 204, 248)  ;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 80px;
+    
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+}
+/*searchbar*/
+.searchbar{
+ display: flex;
+ align-items: center;
+}
+.searchbar input{
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 15px;
+    margin-left: 610px;
+    margin-bottom: 40px;
+}
+.searchlogo{
+    width: 30px;
+    margin-bottom: 40px;
+    margin-left: -60px;
+}
+/*ნავბარში ლოგო*/
+.navbarlogo{
+   width: 130px;
+   margin-top: -40px;
+
+}
+main{
+    height: 800px;
+}
+/*სასტუმროების გასტილვა*/
+.imghotel{
+    width: 350px;
+    height: 350px;
+    border-radius: 6px;
+    display: flex;
+    padding: 25px;
+    
+}
+.hotel1{
+    border:  solid 1px rgb(217, 217, 217);
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    border-radius: 4px;
+   padding: 10px;
+   margin-right: 20px;
+   margin-top: 30px;
+   margin-left: 30px;
+}
+.hotel1 button{
+    border: none;
+    width: 120px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(30, 96, 220);
+    border-radius:20px ;
+    margin-top: 10px;
+    
+}
+.text1{
+    padding: 8px 15px;
+}
+.hotel1 button:hover{
+    background-color: rgb(165, 199, 255);
+    color: white;
+}
+.photos{
+    gap: 30px;
+}
+/*footer*/
+footer{
+    background-color: rgb(39, 57, 117) ;
+    height: 110px;
+    color:rgb(0, 11, 48) ;
+}
+
+h5{
+    margin-left: 750px;
+}
+
+ .logos{
+    margin-left: 1050px;
+    margin-top: -100px;
+    padding: 6px;
+ }
+ .logos h4{
+    margin-left: 0px;
+margin-top: 20px;
+ }
+ .copyright{
+    margin-right: 700px;
+}
+hr{
+   border: 1px solid rgb(0, 0, 107);
+}
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 10px;
+    }
+  
+    .menu li {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  
+    .searchbar {
+      width: 100%;
+      margin-top: 10px;
+      justify-content: space-between;
+    }
+  
+    .searchlogo {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photos {
+      flex: 1 1 100%; 
+      margin: 10px 0;
+    }
+  
+    .text1 h2 {
+      font-size: 16px;
+    }
+  
+    footer h4, footer h5 {
+      text-align: center;
+    }
+  
+    .logos {
+      text-align: center;
+    }
+  
+    .logos img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+   
+    .navbarlogo {
+      width: 100px;
+    }
+  
+    .menu li a {
+      font-size: 14px;
+    }
+  
+    .flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .photos {
+      flex: 1 1 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .text1 h2 {
+      font-size: 14px;
+    }
+  
+    button {
+      padding: 8px 15px;
+    }
+  
+    footer h4, footer h5 {
+      font-size: 14px;
+    }
+  }

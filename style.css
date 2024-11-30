@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: beige;
+   
+}
+header{
+    background-color:rgb(39, 57, 117);
+    height: 60px;
+    padding: 10px 20px;
+
+}
+/*ნავიგაცია*/
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+list-style: none;
+display: flex;
+}
+.menu li{
+    margin-right: 20px;
+    padding: 8px;
+}
+.menu li a{
+    color: rgb(190, 204, 248) ;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 80px;
+}
+
+.menu li a:hover{
+    text-decoration: underline;
+}
+#search{
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 40px;
+    margin-right: -610px;
+}
+.searchlogo{
+    width: 30px;
+    margin-bottom: 40px;
+    margin-left: -60px;
+}
+/*ნავბარში ლოგო*/
+.navbarlogo{
+   width: 130px;
+   margin-top: -40px;
+
+}
+/**/
+main{
+height: 800px;
+background-image: url(https://images.pexels.com/photos/2990775/pexels-photo-2990775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+margin-top: 200px;
+background-color: rgb(130, 152, 202);
+}
+
+h1{
+ margin-top: -200px;
+  font-size: 65px;
+  color:rgb(255, 255, 255);
+  padding-top: 250px;
+
+}
+.hotel button{
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(190, 204, 248) ;
+    background-color:  rgb(33, 53, 133) ;
+    font-size: 20px;
+    padding: 8px;
+    margin-top: 200px;
+    margin-left: 800px;
+    transition: all 0.5s;
+}
+
+.hotel button:hover{
+    transform: scale(1.1);
+    width: 350px;
+    height: 120px;
+}
+
+/*footer*/
+ footer{
+    background-color: rgb(39, 57, 117) ;
+    height: 110px;
+    color:rgb(0, 11, 48) ;
+}
+h4{
+    margin-left: 750px;
+}
+h5{
+    margin-left: 750px;
+}
+
+ .logos{
+    margin-left: 1050px;
+    margin-top: -100px;
+    padding: 6px;
+ }
+ .logos h4{
+    margin-left: 0px;
+margin-top: 20px;
+ }
+.copyright{
+    margin-right: 700px;
+}
+hr{
+   border: 1px solid rgb(0, 0, 107);
+}
+@media (max-width: 480px) {
+   
+    .navbar .menu li a {
+      font-size: 14px;
+    }
+  
+    .navbarlogo {
+      width: 100px;
+    }
+  
+    main h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hotel button {
+      font-size: 16px;
+      padding: 15px;
+    }
+  
+    .searchlogo {
+      width: 20px;
+      height: 20px;
+    }
+  
+    footer h4, footer h5 {
+      font-size: 14px;
+    }
+  }
